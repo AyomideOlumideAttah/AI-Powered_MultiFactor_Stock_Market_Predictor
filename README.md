@@ -1,4 +1,4 @@
-# (UPDATE IN README.md) Project Title
+# Stock Market Analysis Based on Emotional Arousal of News Headlines
 
 (UPDATE IN README.md)
 Briefly describe the purpose/result(s) of your project, the skills you applied, and the AI4ALL Ignite program.
