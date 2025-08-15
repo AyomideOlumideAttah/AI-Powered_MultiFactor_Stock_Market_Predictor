@@ -13,40 +13,31 @@ The randomness of the fluctuations in stock market prices are notorious for bein
 
 ## Methodologies
 
-We collected 10 years of financial data (2015-2025) and removed timezone conflicts between datasets (stock market includes timezones, FRED does not). We also converted monthly economic data to daily (forward-fill). Then we created new variables 
-Feature Engineering: Creates new variables like:
-- Yield curve (10Y - 3M rates)
-- Inflation rate (year-over-year change)
-- Lag features (economic data from 1 and 7 days ago)
-Missing Data: Fills gaps using median values
-Scaling: Normalizes all features to same scale for machine learning
+We collected 10 years of financial data (2015-2025) and removed timezone conflicts between datasets (stock market includes timezones, FRED does not). We also converted monthly economic data to daily (forward-fill). Then we created new variables (such as yield curve (10Y - 3M rates), inflation rate (year-over-year change), and lag features (economic data from 1 and 7 days ago)). Next, we filled any gaps by using median values, and finally we normalized all features to same scale for machine learning purposes.
 
+The machine learning process was itself composed of two different prediction tasks:
+
+1) Classification Model (Direction Prediction)
+Goal: To predict if the stock would go UP (1) or DOWN (0) tomorrow
+Models Tested: Random Forest Classifier (Uses 100 decision trees, votes on outcome) and Logistic Regression (uses mathematical formula with probabilities)
+How it works: Looks at patterns like "When unemployment falls AND VIX is low AND Fed rates are rising, stocks usually go UP". Automatically picks the more accurate model
+
+2) Regression Model (Amount Prediction)
+Goal: Predict HOW MUCH the stock will move (e.g., +0.8% or -1.2%)
+Models Tested: Random Forest Regressor (Uses 100 decision trees, averages predictions) and Linear Regression (Uses mathematical equation with weighted factors)
+How it works: Learns relationships like "Each 1% drop in unemployment = +0.1% stock return". Combines all economic factors into single prediction
 
 ## Data Sources
+ - yfinance dataset: https://pypi.org/project/yfinance/ (source of daily stock prices such as open, high, low, close, volume)
+ - FRED API: https://fredaccount.stlouisfed.org/apikeys (for various samples of economic data, such as GDP, Unemployment Rate, Inflation, Federal Funds Rate, VIX, Treasury Rate, Consumer Sentiment, Industrial Production, Housing Starts, etc)
 
-(UPDATE IN README.md)
-Include any relevant data sources that were used in your project.
+## Technologies Used
+Language: Python
+Libraries/Modules: Pandas, NumPy, Matplotlib, Seaborn, yfinance, Sklearn, etc
+Technologies: Google Colab, Git/GitHub
 
-*EXAMPLE:*
-*Kaggle Datasets: [Link to Kaggle Dataset](https://www.kaggle.com/datasets)*
+## Authors
+- Piero Espinoza ([PieroEB](https://github.com/PieroEB))
+- Aleena Siddiqui ([aleenasid12](https://github.com/aleenasid12))
+- Yerlin Holguin ([yerlinh](https://github.com/yerlinh))
 
-## Technologies Used <!--- do not change this line -->
-
-(UPDATE IN README.md)
-List the technologies, libraries, and frameworks used in your project.
-
-*EXAMPLE:*
-- *Python*
-- *pandas*
-- *OpenAI API*
-
-
-## Authors <!--- do not change this line -->
-
-(UPDATE IN README.md)
-List the names and contact information (e.g., email, GitHub profiles) of the authors or contributors.
-
-*EXAMPLE:*
-*This project was completed in collaboration with:*
-- *John Doe ([john.doe@example.com](mailto:john.doe@example.com))*
-- *Jane Smith ([jane.smith@example.com](mailto:jane.smith@example.com))*
