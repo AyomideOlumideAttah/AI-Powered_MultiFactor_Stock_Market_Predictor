@@ -1,19 +1,9 @@
-# Stock Market Analysis Based on Emotional Arousal of News Headlines
+# Stock Market Analysis Based on Economic Conditions
 
-(UPDATE IN README.md)
-Briefly describe the purpose/result(s) of your project, the skills you applied, and the AI4ALL Ignite program.
-
-*EXAMPLE:*
-*Uncovered and meticulously analyzed three distinct biases present in ChatGPT, employing advanced Python techniques and data analysis methodologies, all within AI4ALL's cutting-edge AI4ALL Ignite accelerator.*
-
+Our AI project is a supervised ML model that predicts both the direction (UP/DOWN) and the magnitude (in %) of future fluctuations in stock market prices based on several macroeconomic factors (including FED Rate, VIX, Unemployment rate, Inflation, and several others), as well as historical stock patterns.
 
 ## Problem Statement <!--- do not change this line -->
-
-(UPDATE IN README.md)
-Describe the motivation for this project, why it is relevant, and what its impacts are.
-
-*EXAMPLE:*
-*Given the substantial daily output of responses, the identification and mitigation of ChatGPT's biases become critical, safeguarding both the multitude of users and the far-reaching consequences they may influence.*
+The randomness of the fluctuations in stock market prices are notorious for being hard to predict, understand, or even make sense of. This sometimes puts off people from even trying to engage in stock trading and even finance professionals find it hard to find success in the highly unstable stock environment. This project aims to address this by leveraging the powerful tools offered by artificial intelligence and machine learning to extract insights from past stock data and present economic conditions, and use them to predict future changes in stock market prices. This can potentially help enlighten the public on how the stock market operates, and arm them with the necessary information needed to make more informed trading decisions.
 
 ## Key Results <!--- do not change this line -->
 
