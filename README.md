@@ -37,6 +37,7 @@ Libraries/Modules: Pandas, NumPy, Matplotlib, Seaborn, yfinance, Sklearn, etc
 Technologies: Google Colab, Git/GitHub
 
 ## Authors
+- Ayomide Olumide-Attah ([AyomideOlumideAttah](https://github.com/AyomideOlumideAttah))
 - Piero Espinoza ([PieroEB](https://github.com/PieroEB))
 - Aleena Siddiqui ([aleenasid12](https://github.com/aleenasid12))
 - Yerlin Holguin ([yerlinh](https://github.com/yerlinh))
