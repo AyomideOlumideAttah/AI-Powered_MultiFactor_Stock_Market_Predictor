@@ -33,7 +33,9 @@ How it works: Learns relationships like "Each 1% drop in unemployment = +0.1% st
 
 ## Technologies Used
 Language: Python
+
 Libraries/Modules: Pandas, NumPy, Matplotlib, Seaborn, yfinance, Sklearn, etc
+
 Technologies: Google Colab, Git/GitHub
 
 ## Authors
