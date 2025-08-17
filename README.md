@@ -20,12 +20,12 @@ The machine learning process was itself composed of two different prediction tas
 1) Classification Model (Direction Prediction)
 Goal: To predict if the stock would go UP (1) or DOWN (0) tomorrow
 Models Tested: Random Forest Classifier (Uses 100 decision trees, votes on outcome) and Logistic Regression (uses mathematical formula with probabilities)
-How it works: Looks at patterns like "When unemployment falls AND VIX is low AND Fed rates are rising, stocks usually go UP". Automatically picks the more accurate model
+How it works: Looks at patterns like "When unemployment falls AND VIX is low AND Fed rates are rising, stocks usually go UP". Automatically picks the more accurate model.
 
 2) Regression Model (Amount Prediction)
 Goal: Predict HOW MUCH the stock will move (e.g., +0.8% or -1.2%)
 Models Tested: Random Forest Regressor (Uses 100 decision trees, averages predictions) and Linear Regression (Uses mathematical equation with weighted factors)
-How it works: Learns relationships like "Each 1% drop in unemployment = +0.1% stock return". Combines all economic factors into single prediction
+How it works: Learns relationships like "Each 1% drop in unemployment = +0.1% stock return". Combines all economic factors into single prediction.
 
 ## Data Sources
  - yfinance dataset: https://pypi.org/project/yfinance/ (source of daily stock prices such as open, high, low, close, volume)
